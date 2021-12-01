@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 /* common */
-*, *::before, *::after {
+* {
     box-sizing: border-box;
     font-family: "Poppins";
 }
@@ -55,4 +55,65 @@ a:visited {
 
 .nav-item a:hover {
     border-bottom: solid 1px royalblue;
+}
+
+/* section */
+section {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.section-left {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+}
+
+.section-left h1 {
+    font-size: 2.0rem;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.my-name {
+    color: #303030;
+    margin-bottom: 0;
+}
+
+.job-name {
+    font-weight: 300;
+    color: #535151;
+    margin-top: 0;
+}
+
+.self-introduction {
+    font-weight: 300;
+    color: #696969;
+}
+
+.section-right {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+}
+
+.fa-linkedin {
+    color: #303030;
+}
+
+/* footer */
+.footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #696969;
+    position: fixed;
+    bottom: 0;
 }
