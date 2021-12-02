@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/* common */
+* {
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+/* header */
+.header {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.gloval-nav {
+    display: flex;
+    justify-content: flex-end;
+    /* border-bottom: solid 1.8px rgba(206, 205, 205, 0.4); */
+    margin: 0 20px;
+}
+
+.gloval-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.gloval-nav .nav-item {
+    display: inline-block;
+    color: #585858;
+}
+
+.nav-item a {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.nav-item.active {
+    border: none;
+    color: royalblue;
+}
+
+.nav-item a:hover {
+    color: royalblue;
+}
+
+/* section */
+section {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.section-left {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+}
+
+.section-left h1 {
+    font-size: 2.0rem;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.my-name {
+    color: #303030;
+    margin-bottom: 0;
+}
+
+.job-name {
+    font-weight: 300;
+    color: #535151;
+    margin-top: 0;
+}
+
+.self-introduction {
+    font-weight: 300;
+    color: #696969;
+}
+
+.section-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-item {
+    font-size: 1.5rem;
+    font-weight: 380;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.right-item:hover {
+    /* background-color: rgba(231, 228, 228, 0.2); */
+    transform: scale(1.2,1.2);
+}
+
+.icon {
+    margin-right: 30px;
+}
+
+/* footer */
+.footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #696969;
+    position: fixed;
+    bottom: 0;
+}
