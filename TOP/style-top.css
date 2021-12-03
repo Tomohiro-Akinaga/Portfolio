@@ -15,31 +15,24 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: inherit;
-}
-
 /* header */
 .header {
     width: 100%;
-    background-color: #fafafa;
+    background-color: #eee5e5;
 }
 
 .gloval-nav {
     display: flex;
     justify-content: flex-end;
-    /* border-bottom: solid 1.8px rgba(206, 205, 205, 0.4); */
     margin: 0 20px;
 }
 
 .gloval-nav ul {
-    margin: 0;
     padding: 0;
 }
 
 .gloval-nav .nav-item {
     display: inline-block;
-    color: #585858;
 }
 
 .nav-item a {
@@ -48,10 +41,10 @@ a:visited {
     width: 100px;
     height: 50px;
     line-height: 50px;
+    color: #303030;
 }
 
-.nav-item.active {
-    border: none;
+.gloval-nav .nav-item.active a {
     color: royalblue;
 }
 
@@ -114,10 +107,10 @@ img {
     padding: 0 20px;
     width: 200px;
     transition: 0.3s;
+    color: #303030;
 }
 
 .right-item:hover {
-    /* background-color: rgba(231, 228, 228, 0.2); */
     transform: scale(1.2,1.2);
 }
 
