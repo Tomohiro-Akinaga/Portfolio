@@ -18,7 +18,7 @@ a {
 /* header */
 .header {
     width: 100%;
-    background-color: #eee5e5;
+    background-color: #eee5e570;
 }
 
 .gloval-nav {
@@ -52,24 +52,24 @@ a {
     color: royalblue;
 }
 
-/* section */
-section {
+/* main */
+main {
     display: flex;
     width: 100%;
     margin-top: 100px;
 }
 
-.section-left {
+.main-left {
     text-align: center;
     display: inline-block;
     width: 50%;
 }
 
-.section-left h1 {
+.main-left h1 {
     font-size: 2.0rem;
 }
 
-img {
+.face-img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -81,6 +81,7 @@ img {
 }
 
 .job-name {
+    font-size: 1.5rem;
     font-weight: 300;
     color: #535151;
     margin-top: 0;
@@ -91,7 +92,7 @@ img {
     color: #696969;
 }
 
-.section-right {
+.main-right {
     width: 50%;
     display: flex;
     flex-direction: column;
