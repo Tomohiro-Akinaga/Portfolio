@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomohiro Akinaga</title>
     <link rel="stylesheet" href="./style-about.css">
+    <link rel="stylesheet" href="./style-about(Sass).css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
 </head>
 <body>
@@ -21,48 +22,95 @@
         </nav>
     </header>
     <main class="main">
-        <div class="main main-left">
-            <h2 class="main-left">About Me</h2>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        <div class="main__container--left">
+            <h2 class="main__title">About Me</h2>
+            <p class="main__text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                 Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
                 Donec eu libero sit amet quam egestas semper.
                 Aenean ultricies mi vitae est.
                 Mauris placerat eleifend leo.</p>
-            <h2>Education</h2>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            <h2 class="main__title">Education</h2>
+            <p class="main__text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                 Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
                 Donec eu libero sit amet quam egestas semper.
                 Aenean ultricies mi vitae est.
                 Mauris placerat eleifend leo.</p>
         </div>
-        <div class="main main-right">
-            <h2>Skills</h2>
-            <div class="main-right-container1">
-                <h3>Familiar with</h3>
-                <img src="./resources/icons8-html-5-480.png" alt="">
-                <img src="./resources/icons8-css3-480.png" alt="">
-                <img src="./resources/icons8-sass-480.png" alt="">
-                <img src="./resources/icons8-javascript-480.png" alt="">
-                <img src="./resources/icons8-github-480.png" alt="">
-                <img src="./resources/icons8-git-480.png" alt="">
-                <img src="./resources/icons8-adobe-premiere-pro-480.png" alt="">
-                <img src="./resources/icons8-adobe-photoshop-480.png" alt="">
+        <div class="main__container--right">
+            <h2 class="main__title">Skills</h2>
+            <h3 class="main__subtitle">Familiar with</h3>
+            <div class="main__wrapper">
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-html-5-480.png" alt="">
+                    <p class="main__text">HTML5</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-css3-480.png" alt="">
+                    <p class="main__text">CSS3</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-sass-480.png" alt="">
+                    <p class="main__text">Sass</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-javascript-480.png" alt="">
+                    <p class="main__text">JavaScript</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-github-480.png" alt="">
+                    <p class="main__text">GitHub</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-git-480.png" alt="">
+                    <p class="main__text">Git</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-adobe-premiere-pro-480.png" alt="">
+                    <p class="main__text">Premiere Pro</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-adobe-photoshop-480.png" alt="">
+                    <p class="main__text">Photoshop</p>
+                </div>
             </div>
-            <div class="main-right-container2">
-                <h3>Learning currently</h3>
-                <img src="./resources/icons8-react-480.png" alt="">
-                <img src="./resources/icons8-google-firebase-console-480.png" alt="">
-                <img src="./resources/icons8-npm-480.png" alt="">
+            <h3 class="main__subtitle">Learning currently</h3>
+            <div class="main__wrapper">
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-react-480.png" alt="">
+                    <p class="main__text">React</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-google-firebase-console-480.png" alt="">
+                    <p class="main__text">Firebase</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-npm-480.png" alt="">
+                    <p class="main__text">npm</p>
+                </div>
             </div>
-            <div class="main-right-container3">
-                <h3>Aspire to learn</h3>
-                <img src="./resources/jest.png" alt="">
-                <img src="./resources/octopus-128x128 (1).png" alt="">
-                <img src="./resources/icons8-webpack-480.png" alt="">
-                <img src="./resources/icons8-typescript-480.png" alt="">
-                <img src="./resources/icons8-adobe-xd-480.png" alt="">
+            <h3 class="main__subtitle">Aspiring to learn</h3>
+            <div class="main__wrapper">
+                <div class="main__item">
+                    <img class="main__img" src="./resources/jest.png" alt="">
+                    <p class="main__text">Jest</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/octopus-128x128 (1).png" alt="">
+                    <p class="main__text">React Testing Library</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-webpack-480.png" alt="">
+                    <p class="main__text">webpack</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-typescript-480.png" alt="">
+                    <p class="main__text">TypeScript</p>
+                </div>
+                <div class="main__item">
+                    <img class="main__img" src="./resources/icons8-adobe-xd-480.png" alt="">
+                    <p class="main__text">Adobe XD</p>
+                </div>
             </div>
-
         </div>
     </main>
     <footer class="footer">
