@@ -1,0 +1,29 @@
+.main {
+  text-align: center;
+}
+.main__title {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main__item {
+  border: solid 1px #000;
+  width: 50%;
+}
+.main__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.main__img {
+  height: 300px;
+}
+/*# sourceMappingURL=style-work(Sass).css.map */
