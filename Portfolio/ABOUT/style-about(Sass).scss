@@ -36,12 +36,13 @@ $main-text-color: #535151;
         font-weight: 300;
         font-size: 130%;
         margin-bottom: 10px;
-        margin-top: 50px;
+        margin-top: 30px;
+        color: #323232;
     }
 
     &__text--first {
         margin-bottom: 1rem;
-        margin-top: 50px;    
+        margin-top: 30px;    
     }
     &__text--second {
         margin-bottom: 1rem;
@@ -68,5 +69,9 @@ $main-text-color: #535151;
         width: 45px;
     }
 
-
+    &__img--introduction {
+        width: 200px;
+        margin-top: 20px;
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
+    }
 }
