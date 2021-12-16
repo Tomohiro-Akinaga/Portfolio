@@ -29,6 +29,7 @@ $main-text-color: #535151;
 
     &__title {
         color: $main-title-color;
+        font-size: 200%;
     }
 
     &__subtitle {
@@ -42,7 +43,7 @@ $main-text-color: #535151;
 
     &__text--first {
         margin-bottom: 1rem;
-        margin-top: 30px;    
+        margin-top: 30px;
     }
     &__text--second {
         margin-bottom: 1rem;

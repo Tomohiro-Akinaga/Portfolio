@@ -1,0 +1,29 @@
+.main {
+    text-align: center;
+
+    &__title {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    &__container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+
+    &__item {
+        border: solid 1px #000;
+        width: 50%;
+    }
+
+    &__link {
+        display: flex;
+        width: 100%;
+    }
+
+    &__img {
+        height: 300px;
+    }
+}
