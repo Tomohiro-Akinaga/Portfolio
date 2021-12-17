@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 /* common */
-*, *::before, *::after {
+* {
     box-sizing: border-box;
     font-family: "Poppins";
 }
@@ -62,4 +62,6 @@ a {
     font-size: 0.8rem;
     font-weight: 300;
     color: #696969;
+    position: fixed;
+    bottom: 0;
 }
