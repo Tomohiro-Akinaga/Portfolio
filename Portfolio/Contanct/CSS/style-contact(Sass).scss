@@ -1,0 +1,22 @@
+$main-title-color: #303030;
+$main-text-color: #535151;
+
+.main {
+    text-align: center;
+    margin: 200px 0;
+
+    &__title {
+        color: #303030;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+    &__email {
+        color: #303030;
+        font-size: large;
+        font-size: 1.2rem;
+    }
+}
