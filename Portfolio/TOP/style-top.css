@@ -59,13 +59,13 @@ main {
     margin-top: 100px;
 }
 
-.main-left {
+.top-main-left {
     text-align: center;
     display: inline-block;
     width: 50%;
 }
 
-.main-left h1 {
+.top-main-left h1 {
     font-size: 2.0rem;
 }
 
@@ -92,7 +92,7 @@ main {
     color: #696969;
 }
 
-.main-right {
+.top-main-right {
     width: 50%;
     display: flex;
     flex-direction: column;
