@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomohiro Akinaga</title>
-    <link rel="stylesheet" href="../css/pc/style.css" media="screen and (min-width:1024px)">
-    <link rel="stylesheet" href="../css/tablet/style.css" media="screen and (max-width:1023px)">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
 </head>
 <body>
     <header class="header">
-        <div id="header__accordion" class="header__accordion">
-            <a href="#" id="header__accordion__button" class="header__accordion__button">
+        <div id="header__accordion--open" class="header__accordion header__accordion--open">
+            <a href="#" id="header__accordion__button--open" class="header__accordion__button">
                 <img class="header__accordion__img" src="./resources/image/menu.png" alt="">
+            </a>
+        </div>
+        <div id="header__accordion--close" class="header__accordion header__accordion--close">
+            <a href="#" id="header__accordion__button--close" class="header__accordion__button">
+                <img class="header__accordion__img" src="./resources/image/close.png" alt="">
             </a>
         </div>
         <nav id="header__gloval-nav" class="header__gloval-nav">
@@ -28,7 +32,7 @@
     </header>
     <main class="top-main">
         <div class="top-main__left">
-            <img class="top-main__left__img" src="./resources/image/Face.jpg" alt="">
+            <img class="top-main__left__img" src="./resources/image/face.jpg" alt="">
             <h1 class="top-main__lett__text--name">Tomohiro Akinaga</h1>
             <p class="top-main__left__text--job">Front-End Developer</p>
             <p class="top-main__left__text--self-introduction">I am a curious Front-End Developer based in Vancouver.</p>
@@ -55,6 +59,6 @@
     <footer class="footer">
         <p class="copyright">Copyright &copy; 2021 Tomohiro Akinaga, All Rights Reserved.</p>
     </footer>
-    <script src="./accordionBar.js"></script>
+    <script src="./accordion.js"></script>
 </body>
 </html>
