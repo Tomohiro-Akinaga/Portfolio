@@ -23,6 +23,7 @@ a {
 .header {
   width: 100%;
   background-color: #eee5e570;
+  text-transform: uppercase;
 }
 
 /* accordion menu */

@@ -23,7 +23,8 @@ a {
 /* header */
 .header {
     width: 100%;
-    background-color: #eee5e570;
+    background-color: $background;
+    text-transform: uppercase;
 }
 
 /* accordion menu */
@@ -41,7 +42,7 @@ a {
         transition: all 0.2s;
 
         &:hover {
-            background-color: $accordion-hover-color;
+            background-color: $accordion-hover;
         }
     }
 
@@ -73,14 +74,14 @@ a {
         color: #303030;
         
         &:hover {
-            color: royalblue;
+            color: $text-blue;
         }
     }
     
     &.active {
         
         & a {
-            color: royalblue;
+            color: $text-blue;
         }
     }
 }
@@ -104,7 +105,7 @@ a {
     }
 
     &__text--name {
-        color: #303030;
+        color: $text-name;
         margin-bottom: 0;
         font-size: 2.0rem;
     }
@@ -112,13 +113,13 @@ a {
     &__text--job {
         font-size: 1.5rem;
         font-weight: 300;
-        color: #535151;
+        color: $text-job;
         margin-top: 0;
     }
 
     &__text--self-introduction {
         font-weight: 300;
-        color: #696969;
+        color: $text-self-introduction;
     }
 }
 
@@ -136,7 +137,7 @@ a {
         display: flex;
         align-items: center;
         transition: 0.3s;
-        color: #303030;
+        color: $top-main-item;
 
         &:hover {
             transform: scale(1.2,1.2);
@@ -166,12 +167,12 @@ a {
     /* header */
     .header__gloval-nav {
         display: none;
+        // background-color: $gloval-nav-active;
     }
 
     .header__gloval-nav.is-active {
         display: flex;
         margin: 0;
-        // box-shadow: 0px 0px 10px 1px #cbcbcb8c;
 
         & ul {
             display: flex;
@@ -201,7 +202,7 @@ a {
         }
 
         &__button:active {
-            background-color: $accordion-active-color;
+            background-color: $accordion-active;
         }
     }
 
