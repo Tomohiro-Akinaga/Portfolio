@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import "./variables.scss";
+/* common */
+* {
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.window {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+/* header */
+.header {
+    width: 100%;
+    background-color: $background;
+    text-transform: uppercase;
+}
+
+/* accordion menu */
+.header__accordion {
+    // display: none;
+    height: 72px;
+    justify-content: flex-end;
+
+    &__button {
+        height: 100%;
+        width: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: $accordion-hover;
+        }
+    }
+
+    &__img {
+        height: 35%;
+    }
+}
+
+/* goval navigation*/
+.header__gloval-nav {
+    // display: flex;
+    justify-content: flex-end;
+    margin: 0 30px;
+    
+    & ul {
+        padding: 0;
+    }
+}
+
+.header__nav-item {
+    display: inline-block;
+    
+    & a {
+        display: inline-block;
+        text-align: center;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        color: #303030;
+        
+        &:hover {
+            color: $text-blue;
+        }
+    }
+    
+    &.active {
+        
+        & a {
+            color: $text-blue;
+        }
+    }
+}
+
+/* top-main__left */
+.top-main {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.top-main__left {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+
+    &__img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    &__text--name {
+        color: $text-name;
+        margin-bottom: 0;
+        font-size: 2.0rem;
+    }
+
+    &__text--job {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: $text-job;
+        margin-top: 0;
+    }
+
+    &__text--self-introduction {
+        font-weight: 300;
+        color: $text-self-introduction;
+    }
+}
+
+/* top-main__right */
+.top-main__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+        font-size: 1.5rem;
+        font-weight: 380;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+        color: $top-main-item;
+
+        &:hover {
+            transform: scale(1.2,1.2);
+        }
+    }
+
+    &__icon {
+        margin-right: 30px;
+    }
+
+}
+
+/* footer */
+.footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #696969;
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+
+    /* header */
+    .header__gloval-nav {
+        display: none;
+        // background-color: $gloval-nav-active;
+    }
+
+    .header__gloval-nav.is-active {
+        display: flex;
+        margin: 0;
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+           
+            & li {
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .header__accordion {
+        display: flex;
+
+        &.header__accordion--close {
+            display: none;
+        }
+
+        &.is-active {
+            display: flex;
+        }
+        &.inactive {
+            display: none;
+        }
+
+        &__button:active {
+            background-color: $accordion-active;
+        }
+    }
+
+    /* main */
+    .top-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 100px;
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .header__gloval-nav {
+        display: flex;
+    }
+
+    .header__accordion {
+        display: none;
+    }
+}
+

@@ -1,40 +1,33 @@
 window.addEventListener("DOMContentLoaded", () => {
-        const headerAccordion = document.getElementById("header__accordion");
-        headerAccordion.addEventListener("click", accordion);
-});
+    const accordionOpen = document.getElementById("header__accordion--open");
+    const accordionClose = document.getElementById("header__accordion--close");
+    const glovalNav = document.getElementById("header__gloval-nav");
+    accordionOpen.addEventListener("click", addClassName);
+    accordionClose.addEventListener("click", addClassName);
 
-function accordion() {
-    const headerAccordion = document.getElementById("header__accordion");
-    const headerGlovalNav = document.getElementById("header__gloval-nav");
 
-    if (window.matchMedia( "(max-width: 1023px)" ).matches) {
-        // console.log(headerGlovalNav.style.display);
-        if (headerGlovalNav.style.display === "") {
-            headerGlovalNav.style.display = "flex";
-            // console.log(headerGlovalNav.style.display);
-        } else if (headerGlovalNav.style.display === "flex") {
-            headerGlovalNav.style.display = "none";
-            // console.log(headerGlovalNav.style.display);
-        } else if (headerGlovalNav.style.display === "none") {
-            headerGlovalNav.style.display = "flex";
-            // console.log(headerGlovalNav.style.display);
-        } else if (headerAccordion === null) {
-            headerGlovalNav.style.display = "flex";
-            // console.log(headerGlovalNav.style.display);
+    function addClassName() {
+        if(glovalNav.classList.contains("is-active")) {
+            glovalNav.classList.remove("is-active")
+        } else {
+            glovalNav.classList.add("is-active")
+
         }
-    } else  {
-        headerGlovalNav.style.display = "flex"
+
+        if(accordionOpen.classList.contains("inactive")) {
+            accordionOpen.classList.remove("inactive")
+        } else {
+            accordionOpen.classList.add("inactive")
+
+        }
+
+        if(accordionClose.classList.contains("is-active")) {
+            accordionClose.classList.remove("is-active")
+        } else {
+            accordionClose.classList.add("is-active")
+
+        }
     }
-};
+    
 
-// window.addEventListener("mousemove", displayGlovalNav);
-
-// function displayGlovalNav() {
-//     const headerAccordion = document.getElementById("header__accordion");
-//     const headerGlovalNav = document.getElementById("header__gloval-nav");
-//     if (headerAccordion.style.display === null ) {
-//         headerGlovalNav.style.display = "flex";
-//     }
-// };
-
-
+});
