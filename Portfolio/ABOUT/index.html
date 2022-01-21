@@ -5,119 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomohiro Akinaga</title>
-    <link rel="stylesheet" href="./style-about.css">
-    <link rel="stylesheet" href="./style-about(Sass).css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
 </head>
 <body>
-    <header class="header">
-        <nav class="gloval-nav">
-            <ul>
-                <li class="nav-item"><a href="#">TOP</a></li>
-                <li class="nav-item active"><a href="#">ABOUT</a></li>
-                <li class="nav-item"><a href="#">WORK</a></li>
-                <li class="nav-item"><a href="#">BLOG</a></li>
-                <li class="nav-item"><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <div class="main__container--left">
-            <h2 class="main__title">About Me</h2>
-            <p class="main__text--first">
-            Hello, my name is Tomo.
-            I was born and raised in Japan.
-            After graduating from university, I worked in digital marketing and as a counsellor at a tourist information center in Japan.
-            </p>
-            <p class="main__text--second">
-            In order to become a front-end developer, I am currently studying programming with a focus on JavaScript at a college in Vancouver.
-            In addition to coding, I also love photo processing, video editing, and digital marketing. 
-            I am familiar with all areas of the web and can handle a wide range of tasks from design, development, and analysis.
-            </p>
-            <p class="main__text--third">
-            I am a very passionate and curious person who pursues everything to the fullest. 
-            There are still many things that I have yet to learn, but I am eager to learn and improve my skills.
-            </p>
-        </div>
-        <div class="main__container--right">
-            <h2 class="main__title">Skills</h2>
-            <h3 class="main__subtitle">Familiar with...</h3>
-            <div class="main__wrapper">
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-html-5-480.png" alt="">
-                    <p class="main__text">HTML5</p>
+    <div class="window">
+        <header class="header">
+            <div id="header__accordion--open" class="header__accordion header__accordion--open">
+                <a href="#" id="header__accordion__button--open" class="header__accordion__button">
+                    <img class="header__accordion__img" src="../resources/image/accordion/menu.png" alt="">
+                </a>
+            </div>
+            <div id="header__accordion--close" class="header__accordion header__accordion--close">
+                <a href="#" id="header__accordion__button--close" class="header__accordion__button">
+                    <img class="header__accordion__img" src="../resources/image/accordion/close.png" alt="">
+                </a>
+            </div>
+            <nav id="header__gloval-nav" class="header__gloval-nav">
+                <ul>
+                    <li class="header__nav-item"><a href="#">Top</a></li>
+                    <li class="header__nav-item active"><a href="#">About</a></li>
+                    <li class="header__nav-item"><a href="#">Work</a></li>
+                    <li class="header__nav-item"><a href="#">Blog</a></li>
+                    <li class="header__nav-item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="about-main">
+            <div class="about-main__left">
+                <h2 class="about-main__left__title">About Me</h2>
+                <p class="about-main__left__text--first">
+                Hello, my name is Tomo.
+                I was born and raised in Japan.
+                After graduating from university, I worked in digital marketing and as a counsellor at a tourist information center in Tokyo.
+                </p>
+                <p class="about-main__left__text--second">
+                In order to become a front-end developer, I am currently studying programming with a focus on JavaScript at a college in Vancouver.
+                In addition to coding, I also love photo processing, video editing, and digital marketing. 
+                I am familiar with all areas of the web and can handle a wide range of tasks from design, development, and analysis.
+                </p>
+                <p class="about-main__left__text--third">
+                I am a very passionate and curious person who pursues everything to the fullest. 
+                There are still many things that I have yet to learn, but I am eager to learn and improve my skills.
+                </p>
+            </div>
+            <div class="about-main__right">
+                <h2 class="about-main__right__title">Skills</h2>
+                <h3 class="about-main__right__subtitle">Using currently...</h3>
+                <div class="about-main__right__wrapper">
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-html-5-480.png" alt="">
+                        <p class="about-main__right__text">HTML5</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-css3-480.png" alt="">
+                        <p class="about-main__right__text">CSS3</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-sass-480.png" alt="">
+                        <p class="about-main__right__text">Sass</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-javascript-480.png" alt="">
+                        <p class="about-main__right__text">JavaScript</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-react-480.png" alt="">
+                        <p class="about-main__right__text">React</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-google-firebase-console-480.png" alt="">
+                        <p class="about-main__right__text">Firebase</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-npm-480.png" alt="">
+                        <p class="about-main__right__text">npm</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-github-480.png" alt="">
+                        <p class="about-main__right__text">GitHub</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-adobe-premiere-pro-480.png" alt="">
+                        <p class="about-main__right__text">Adobe<br>Premiere Pro</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-adobe-photoshop-480.png" alt="">
+                        <p class="about-main__right__text">Adobe<br>Photoshop</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-google-analytics-480.png" alt="">
+                        <p class="about-main__right__text">Google<br>Analytics</p>
+                    </div>
                 </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-css3-480.png" alt="">
-                    <p class="main__text">CSS3</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-sass-480.png" alt="">
-                    <p class="main__text">Sass</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-javascript-480.png" alt="">
-                    <p class="main__text">JavaScript</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-github-480.png" alt="">
-                    <p class="main__text">GitHub</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-adobe-premiere-pro-480.png" alt="">
-                    <p class="main__text">Adobe<br>Premiere Pro</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-adobe-photoshop-480.png" alt="">
-                    <p class="main__text">Adobe<br>Photoshop</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-google-analytics-480.png" alt="">
-                    <p class="main__text">Google<br>Analytics</p>
+                <h3 class="about-main__right__subtitle">Aspiring to learn...</h3>
+                <div class="about-main__right__wrapper">
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/jest.png" alt="">
+                        <p class="about-main__right__text">Jest</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/react-testing-library.png" alt="">
+                        <p class="about-main__right__text">React<br>Testing Library</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-webpack-480.png" alt="">
+                        <p class="about-main__right__text">webpack</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-typescript-480.png" alt="">
+                        <p class="about-main__right__text">TypeScript</p>
+                    </div>
+                    <div class="about-main__right__item">
+                        <img class="about-main__right__img" src="../resources/image/about/icons8-adobe-xd-480.png" alt="">
+                        <p class="about-main__right__text">Adobe XD</p>
+                    </div>
                 </div>
             </div>
-            <h3 class="main__subtitle">Learning currently...</h3>
-            <div class="main__wrapper">
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-react-480.png" alt="">
-                    <p class="main__text">React</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-google-firebase-console-480.png" alt="">
-                    <p class="main__text">Firebase</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-npm-480.png" alt="">
-                    <p class="main__text">npm</p>
-                </div>
-            </div>
-            <h3 class="main__subtitle">Aspiring to learn...</h3>
-            <div class="main__wrapper">
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/jest.png" alt="">
-                    <p class="main__text">Jest</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/react-testing-library.png" alt="">
-                    <p class="main__text">React Testing Library</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-webpack-480.png" alt="">
-                    <p class="main__text">webpack</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-typescript-480.png" alt="">
-                    <p class="main__text">TypeScript</p>
-                </div>
-                <div class="main__item">
-                    <img class="main__img" src="./resources/Skills/icons8-adobe-xd-480.png" alt="">
-                    <p class="main__text">Adobe XD</p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <p class="copyright">Copyright &copy; 2021 Tomohiro Akinaga, All Rights Reserved.</p>
-    </footer>
+        </main>
+        <footer class="footer">
+            <p class="copyright">Copyright &copy; 2021 Tomohiro Akinaga, All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="accordion.js"></script>
 </body>
 </html>
