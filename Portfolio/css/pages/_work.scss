@@ -17,7 +17,7 @@ a {
 
 .window {
     position: relative;
-    padding-bottom: 100px;
+    // padding-bottom: 100px;
 }
 
 ul {
@@ -93,7 +93,8 @@ ul {
 /* top-work */
 .work-main {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
+    padding: 0 30px;
 
     &__title {
         margin-bottom: 10px;
@@ -117,6 +118,7 @@ ul {
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
         transition: 0.2s;
+        padding: 30px 0;
 
         a {
             color: $main-text-color;
@@ -129,13 +131,13 @@ ul {
 
     &__link {
         display: flex;
-        width: 100%;
+        justify-content: space-evenly;
     }
 
     &__img {
         &--app {
             height: 300px;
-            margin: 30px;
+            // margin: 30px;
             border-radius: 8px;
         }
 
@@ -145,9 +147,12 @@ ul {
     }
 
     &__description {
-        margin-top: 30px;
-        margin-right: 30px;
+        // margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
         font-weight: 300;
+        width: 50%;
 
         .main__text {
             text-align: left;
@@ -156,11 +161,18 @@ ul {
 
     &__subtitle {
         font-weight: 300;
+        margin: 0;
+    }
+
+    &__text {
+        margin: 0;
     }
 
     &__box {
         display: flex;
         justify-content: space-around;
+        margin: 0;
+        padding: 0;
 
         .main__text {
             padding: 2px 10px;
@@ -238,20 +250,24 @@ ul {
     }
 
     /* main */
-    .top-main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        margin-top: 100px;
-        padding: 0 30px;
+    .work-main {
+        &__container {
+            flex-direction: column;
 
-        &__left {
-            width: 100%;
         }
 
-        &__right {
+        &__wrapper {
+            margin-top: 30px;
             width: 100%;
+            padding: 0;
+        }
+
+        &__link {
+            flex-direction: column;
+        }
+
+        &__article {
+            padding: 30px;
         }
     }
 
