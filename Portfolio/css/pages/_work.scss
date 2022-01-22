@@ -15,9 +15,14 @@ a {
     text-decoration: none;
 }
 
-// .window {
-//     padding-bottom: 100px;
-// }
+.window {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+}
 
 /* header */
 .header {
@@ -85,68 +90,101 @@ a {
     }
 }
 
-/* top-main__left */
-.top-main {
-    display: flex;
-    width: 100%;
-    margin-top: 100px;
-}
-
-.top-main__left {
+/* top-work */
+.work-main {
     text-align: center;
-    display: inline-block;
-    width: 50%;
+    margin-top: 60px;
+    padding: 0 30px;
 
-    &__img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
+    &__title {
+        margin-bottom: 10px;
+        color: $main-title-color;
     }
 
-    &__text--name {
-        color: $text-name;
-        margin-bottom: 0;
-        font-size: 2.0rem;
-    }
-
-    &__text--job {
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: $text-job;
-        margin-top: 0;
-    }
-
-    &__text--self-introduction {
-        font-weight: 300;
-        color: $text-self-introduction;
-    }
-}
-
-/* top-main__right */
-.top-main__right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &__item {
-        font-size: 1.5rem;
-        font-weight: 380;
-        border-radius: 3px;
+    &__container {
         display: flex;
-        align-items: center;
-        transition: 0.3s;
-        color: $top-main-item;
+        flex: none;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    &__wrapper {
+        display: flex;
+        width: 50%;
+        padding: 30px;
+        min-width: 300px;
+    }
+
+    &__article {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        transition: 0.2s;
+        padding: 30px 0;
+
+        a {
+            color: $main-text-color;
+        }
 
         &:hover {
-            transform: scale(1.2,1.2);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
         }
     }
 
-    &__icon {
-        margin-right: 30px;
+    &__link {
+        display: flex;
+        justify-content: space-evenly;
     }
 
+    &__img {
+        &--app {
+            height: 300px;
+            // margin: 30px;
+            border-radius: 8px;
+        }
+
+        &--skills {
+            width: 45px;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        font-weight: 300;
+        width: 50%;
+
+        .main__text {
+            text-align: left;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        margin: 0;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+
+        .main__text {
+            padding: 2px 10px;
+        }
+    }
+
+    &__item {
+        .main__text {
+            margin: 0;
+            padding: 0;
+            font-size: 0.8rem;
+        }
+    }
 }
 
 /* footer */
@@ -159,6 +197,11 @@ a {
     color: #696969;
     position: absolute;
     bottom: 0;
+    margin-bottom: 13px;
+    &__copyright {
+        margin: 0;
+    }
+    
 }
 
 @media only screen and (max-width: 1023px) {
@@ -166,6 +209,7 @@ a {
     /* window */
     .window {
         position: relative;
+        padding-bottom: 80px;
     }
 
     /* header */
@@ -211,26 +255,42 @@ a {
     }
 
     /* main */
-    .top-main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        margin-top: 100px;
-        padding: 0 30px;
-
-        &__left {
-            width: 100%;
+    .work-main {
+        padding: 0;
+        &__container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
-        &__right {
+        &__wrapper {
+            margin-top: 30px;
+            padding: 0;
+        }
+
+        &__link {
+            flex-direction: column;
+            align-items: center;
+            & img {
+                width: 100px;
+                height: auto;
+            }
+        }
+
+        &__article {
+            padding: 30px;
+        }
+
+        &__description {
             width: 100%;
+            padding: 0;
+            margin-top: 30px;
         }
     }
 
     /* footer */
     .footer {
-        padding: 0 30px;
+        padding: 0;
     }
 
 }
