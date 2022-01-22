@@ -16,7 +16,6 @@ a {
 }
 
 .window {
-    position: relative;
     padding-bottom: 100px;
 }
 
@@ -164,6 +163,11 @@ a {
 
 @media only screen and (max-width: 1023px) {
 
+    /* window */
+    .window {
+        position: relative;
+    }
+
     /* header */
     .header__gloval-nav {
         display: none;
@@ -213,6 +217,7 @@ a {
         justify-content: center;
         width: 100%;
         margin-top: 100px;
+        padding: 0 30px;
 
         &__left {
             width: 100%;
@@ -221,6 +226,11 @@ a {
         &__right {
             width: 100%;
         }
+    }
+
+    /* footer */
+    .footer {
+        padding: 0 30px;
     }
 
 }
