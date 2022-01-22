@@ -5,156 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomohiro Akinaga</title>
-    <link rel="stylesheet" href="./CSS/style-work.css">
-    <link rel="stylesheet" href="./CSS/style-work(Sass).css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
 </head>
 <body>
-    <header class="header">
-        <nav class="gloval-nav">
-            <ul>
-                <li class="nav-item"><a href="#">TOP</a></li>
-                <li class="nav-item"><a href="#">ABOUT</a></li>
-                <li class="nav-item active"><a href="#">WORK</a></li>
-                <li class="nav-item"><a href="#">BLOG</a></li>
-                <li class="nav-item"><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <h1 class="main__title">Work</h1>
-        <div class="main__container">
-            <div class="main__wrapper">
-                <article class="main__article">
-                    <a href="" class="main__link">
-                        <img src="./resources/Works/Example.jpeg" alt="" class="main__img--app">
-                        <div class="main__description">
-                            <h2 class="main__subtitle">Weather App</h2>
-                            <p class="main__text">
-                            You can see the weather forecast every 5 days and every 3 hours, and the current weather conditions.
-                            This app is using Weather API of Open Weather.
-                            </p>
-                            <div class="main__box">
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-html-5-480.png" alt="">
-                                    <p class="main__text">HTML5</p>
-                                </div>
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-css3-480.png" alt="">
-                                    <p class="main__text">CSS3</p>
-                                </div>
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-sass-480.png" alt="">
-                                    <p class="main__text">Sass</p>
-                                </div>
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-javascript-480.png" alt="">
-                                    <p class="main__text">JavaScript</p>
-                                </div>
+    <div class="window">
+        <header class="header">
+            <div id="header__accordion--open" class="header__accordion header__accordion--open">
+                <a href="#" id="header__accordion__button--open" class="header__accordion__button">
+                    <img class="header__accordion__img" src="../resources/image/accordion/menu.png" alt="">
+                </a>
+            </div>
+            <div id="header__accordion--close" class="header__accordion header__accordion--close">
+                <a href="#" id="header__accordion__button--close" class="header__accordion__button">
+                    <img class="header__accordion__img" src="../resources/image/accordion/close.png" alt="">
+                </a>
+            </div>
+            <nav id="header__gloval-nav" class="header__gloval-nav">
+                <ul>
+                    <li class="header__nav-item"><a href="#">Top</a></li>
+                    <li class="header__nav-item"><a href="#">About</a></li>
+                    <li class="header__nav-item active"><a href="#">Work</a></li>
+                    <li class="header__nav-item"><a href="#">Blog</a></li>
+                    <li class="header__nav-item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="work-main">
+            <h1 class="work-main__title">Work</h1>
+            <div class="work-main__container">
+                <div class="work-main__wrapper">
+                    <article class="work-main__article">
+                        <a href="" class="work-main__link">
+                            <img src="../resources/image/work/Example.jpeg" alt="" class="work-main__img--app">
+                            <div class="work-main__description">
+                                <h2 class="work-main__subtitle">Weather App</h2>
+                                <p class="work-main__text">
+                                You can see the weather forecast every 5 days and every 3 hours, and the current weather conditions.
+                                This app is using Weather API of Open Weather.
+                                </p>
+                                <ul class="work-main__box">
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-html-5-480.png" alt="">
+                                        <p class="work-main__text">HTML5</p>
+                                    </li>
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-css3-480.png" alt="">
+                                        <p class="work-main__text">CSS3</p>
+                                    </li>
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-sass-480.png" alt="">
+                                        <p class="work-main__text">Sass</p>
+                                    </li>
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-javascript-480.png" alt="">
+                                        <p class="work-main__text">JavaScript</p>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            <div class="main__wrapper">
-                <article class="main__article">
-                    <a href="" class="main__link">
-                        <img src="./resources/Works/Example.jpeg" alt="" class="main__img--app">
-                        <div class="main__description">
-                            <h2 class="main__subtitle">Movie App</h2>
-                            <p class="main__text">
-                            From the latest movies to the most popular ones,
-                            you can find reviews, actor information,
-                            and other movie information you may be interested in. 
-                            This app uses The Movie Database API.
-                            </p>
-                            <div class="main__box">
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-html-5-480.png" alt="">
-                                    <p class="main__text">HTML5</p>
-                                </div>
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-css3-480.png" alt="">
-                                    <p class="main__text">CSS3</p>
-                                </div>
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-sass-480.png" alt="">
-                                    <p class="main__text">Sass</p>
-                                </div>
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-javascript-480.png" alt="">
-                                    <p class="main__text">JavaScript</p>
-                                </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="work-main__wrapper">
+                    <article class="work-main__article">
+                        <a href="" class="work-main__link">
+                            <img src="../resources/image/work/Example.jpeg" alt="" class="work-main__img--app">
+                            <div class="work-main__description">
+                                <h2 class="work-main__subtitle">Movie App</h2>
+                                <p class="work-main__text">
+                                From the latest movies to the most popular ones,
+                                you can find reviews, actor information,
+                                and other movie information you may be interested in. 
+                                This app uses The Movie Database API.
+                                </p>
+                                <ul class="work-main__box">
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-html-5-480.png" alt="">
+                                        <p class="work-main__text">HTML5</p>
+                                    </li>
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-css3-480.png" alt="">
+                                        <p class="work-main__text">CSS3</p>
+                                    </li>
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-sass-480.png" alt="">
+                                        <p class="work-main__text">Sass</p>
+                                    </li>
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-javascript-480.png" alt="">
+                                        <p class="work-main__text">JavaScript</p>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            <div class="main__wrapper">
-                <article class="main__article">
-                    <a href="" class="main__link">
-                        <img src="./resources/Works/Example.jpeg" alt="" class="main__img--app">
-                        <div class="main__description">
-                            <h2 class="main__subtitle">Task Management App</h2>
-                            <p class="main__text">
-                                This app is a task management app that allows you to keep track of tasks that need to be done. 
-                                You can classify tasks into your favorites and there is also a search function.
-                            </p>
-                            <div class="main__box">
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-html-5-480.png" alt="">
-                                    <p class="main__text">HTML5</p>
-                                </div>
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-css3-480.png" alt="">
-                                    <p class="main__text">CSS3</p>
-                                </div>
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-sass-480.png" alt="">
-                                    <p class="main__text">Sass</p>
-                                </div>
-                                <div class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-javascript-480.png" alt="">
-                                    <p class="main__text">JavaScript</p>
-                                </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="work-main__wrapper">
+                    <article class="work-main__article">
+                        <a href="" class="work-main__link">
+                            <img src="../resources/image/work/Example.jpeg" alt="" class="work-main__img--app">
+                            <div class="work-main__description">
+                                <h2 class="work-main__subtitle">Task Management App</h2>
+                                <p class="work-main__text">
+                                    This app is a task management app that allows you to keep track of tasks that need to be done. 
+                                    You can classify tasks into your favorites and there is also a search function.
+                                </p>
+                                <ul class="work-main__box">
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-html-5-480.png" alt="">
+                                        <p class="work-main__text">HTML5</p>
+                                    </li>
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-css3-480.png" alt="">
+                                        <p class="work-main__text">CSS3</p>
+                                    </li>
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-sass-480.png" alt="">
+                                        <p class="work-main__text">Sass</p>
+                                    </li>
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-javascript-480.png" alt="">
+                                        <p class="work-main__text">JavaScript</p>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                    </a>
-                </article>
+                        </a>
+                    </article>
+                </div>
+                <div class="work-main__wrapper">
+                    <article class="work-main__article">
+                        <a href="" class="work-main__link">
+                            <img src="../resources/image/work/Example.jpeg" alt="" class="work-main__img--app">
+                            <div class="work-main__description">
+                                <h2 class="work-main__subtitle">Country Explorer App</h2>
+                                <p class="work-main__text">
+                                You can look up information about a country, such as the name of its capital, population, and language.
+                                This app is my first group project.
+                                I did styling CSS.
+                                </p>
+                                <ul class="work-main__box">
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-html-5-480.png" alt="">
+                                        <p class="work-main__text">HTML5</p>
+                                    </li>
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-css3-480.png" alt="">
+                                        <p class="work-main__text">CSS3</p>
+                                    </li>
+                                    <li class="work-main__item">
+                                        <img class="work-main__img--skills" src="./resources/Skills/icons8-javascript-480.png" alt="">
+                                        <p class="work-main__text">JavaScript</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </article>
+                </div>
             </div>
-            <div class="main__wrapper">
-                <article class="main__article">
-                    <a href="" class="main__link">
-                        <img src="./resources/Works/Example.jpeg" alt="" class="main__img--app">
-                        <div class="main__description">
-                            <h2 class="main__subtitle">Country Explorer App</h2>
-                            <p class="main__text">
-                            You can look up information about a country, such as the name of its capital, population, and language.
-                            This app is my first group project.
-                            I did styling CSS.
-                            </p>
-                            <ul class="main__box">
-                                <li class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-html-5-480.png" alt="">
-                                    <p class="main__text">HTML5</p>
-                                </li>
-                                <li class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-css3-480.png" alt="">
-                                    <p class="main__text">CSS3</p>
-                                </li>
-                                <li class="main__item">
-                                    <img class="main__img--skills" src="./resources/Skills/icons8-javascript-480.png" alt="">
-                                    <p class="main__text">JavaScript</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                </article>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <p class="copyright">Copyright &copy; 2021 Tomohiro Akinaga, All Rights Reserved.</p>
-    </footer>
+        </main>
+        <footer class="footer">
+            <p class="copyright">Copyright &copy; 2021 Tomohiro Akinaga, All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="./accordion.js"></script>
 </body>
 </html>
