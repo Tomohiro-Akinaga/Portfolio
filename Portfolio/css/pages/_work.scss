@@ -17,7 +17,7 @@ a {
 
 .window {
     position: relative;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
 }
 
 ul {
@@ -203,10 +203,10 @@ ul {
     color: #696969;
     position: absolute;
     bottom: 0;
-    margin-bottom: 13px;
-    &__copyright {
-        margin: 0;
-    }
+    // margin-bottom: 13px;
+    // &__copyright {
+    //     margin: 0;
+    // }
     
 }
 
@@ -215,7 +215,7 @@ ul {
     /* window */
     .window {
         position: relative;
-        padding-bottom: 80px;
+        // padding-bottom: 80px;
     }
 
     /* header */
