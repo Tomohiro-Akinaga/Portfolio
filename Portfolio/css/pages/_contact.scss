@@ -86,76 +86,27 @@ a {
     }
 }
 
-/* about-main */
-.about-main {
+/* conatact-main */
+.contact-main {
+    
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    height: 85vh;
-    
-    &__left {
-        width: 50%;
-        margin-left: 60px;
+    flex-direction: column;
+    height: 80vh;
 
-        p {
-            color: $main-text-color;
-            font-weight: 300;
-        }
-
-        &__title {
-            color: $main-title-color;
-            font-size: 200%;
-        }
-
-        &__text--first {
-            margin-bottom: 1rem;
-            margin-top: 30px;
-        }
-        &__text--second {
-            margin-bottom: 1rem;
-        }
+    &__title {
+        color: #303030;
     }
 
-    &__right {
-        width: 50%;
-        margin-left: 60px;
-
-        &__title {
-            color: $main-title-color;
-            font-size: 2.0rem;
-        }
-
-        &__subtitle {
-            color: $main-title-color;
-            font-weight: 300;
-            font-size: 130%;
-            margin-bottom: 10px;
-            margin-top: 30px;
-            color: #323232;
-        }
-
-        &__wrapper {
-            display: flex;
-            flex-wrap: wrap;
-        }
-    
-        &__item {
-            text-align: center;
-            margin-right: 20px;
-            margin-top: 10px;
-    
-            p {
-                color: $main-text-color;
-                font-size: 0.8rem;
-                font-weight: 300;
-                margin: 0;
-            }
-        }
-    
-        &__img {
-            width: 45px;
-        }
+    &__text {
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+    &__email {
+        color: #303030;
+        font-size: large;
+        font-size: 1.2rem;
     }
 }
 
@@ -175,6 +126,7 @@ a {
 
     .window {
         min-height: 100vh;
+        position: relative;
     }
 
     /* header */
@@ -225,7 +177,6 @@ a {
         flex-direction: column;
         text-align: center;
         padding: 0 30px;
-        height: auto;
 
         &__left {
             margin: 0;
@@ -257,7 +208,7 @@ a {
         font-size: 0.8rem;
         font-weight: 300;
         color: #696969;
-        position: initial;
+        position: absolute;
         bottom: 0;
         // margin-top: 40px;
     }
