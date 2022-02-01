@@ -160,15 +160,17 @@ a {
 }
 
 /* footer */
-.footer {
+.about-footer {
     display: inline-block;
     width: 100%;
-    text-align: center;
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: #696969;
     position: absolute;
     // bottom: 0;
+    &__copyright {
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: #696969;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -226,6 +228,7 @@ a {
         text-align: center;
         padding: 0 30px;
         height: auto;
+        margin-top: 100px;
 
         &__left {
             margin: 0;
@@ -250,15 +253,15 @@ a {
         }
     }
 
-    .footer {
+    .about-footer {
         display: inline-block;
         width: 100%;
-        text-align: center;
-        font-size: 0.8rem;
-        font-weight: 300;
-        color: #696969;
-        position: initial;
-        // bottom: 0;
+        &__copyright {
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 300;
+            color: #696969;
+        }
         // margin-top: 40px;
     }
 }

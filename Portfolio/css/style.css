@@ -360,14 +360,16 @@ a {
 }
 
 /* footer */
-.footer {
+.about-footer {
   display: inline-block;
   width: 100%;
+  position: absolute;
+}
+.about-footer__copyright {
   text-align: center;
   font-size: 0.8rem;
   font-weight: 300;
   color: #696969;
-  position: absolute;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -418,6 +420,7 @@ a {
     text-align: center;
     padding: 0 30px;
     height: auto;
+    margin-top: 100px;
   }
   .about-main__left {
     margin: 0;
@@ -437,14 +440,15 @@ a {
     margin-bottom: 30px;
   }
 
-  .footer {
+  .about-footer {
     display: inline-block;
     width: 100%;
+  }
+  .about-footer__copyright {
     text-align: center;
     font-size: 0.8rem;
     font-weight: 300;
     color: #696969;
-    position: initial;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -630,6 +634,7 @@ ul {
   transition: 0.2s;
   width: 50%;
   margin-right: 10px;
+  padding: 5px;
 }
 .work-main__app:hover {
   background-color: #8f828223;
@@ -640,20 +645,23 @@ ul {
   transition: 0.2s;
   width: 50%;
   margin-left: 10px;
+  padding: 5px;
 }
 .work-main__github:hover {
   background-color: #8f828223;
 }
 
 /* footer */
-.footer {
+.work-footer {
   display: inline-block;
   width: 100%;
   text-align: center;
+  position: absolute;
+}
+.work-footer__copyright {
   font-size: 0.8rem;
   font-weight: 300;
   color: #696969;
-  position: absolute;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -709,15 +717,17 @@ ul {
   }
 
   /* footer */
-  .footer {
+  .work-footer {
     display: inline-block;
     width: 100%;
+    position: absolute;
+    padding: 0;
+  }
+  .work-footer__copyright {
     text-align: center;
     font-size: 0.8rem;
     font-weight: 300;
     color: #696969;
-    position: absolute;
-    padding: 0;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -743,21 +753,27 @@ ul {
   .work-main__img--app {
     width: 100px;
     height: auto;
-    margin: 30px 0;
+    margin-left: 15px;
   }
   .work-main__article {
     padding: 0;
   }
   .work-main__description {
     width: 100%;
-    padding: 0 20px;
+    padding: 20px;
   }
   .work-main__text {
-    margin: 20px 0;
+    font-size: 0.9rem;
   }
   .work-main__text--skills {
     margin: 0;
     font-size: 0.8rem;
+  }
+  .work-main__url--text {
+    margin: 0;
+  }
+  .work-main__github--text {
+    margin: 0;
   }
 }
 @media only screen and (min-width: 1024px) {
