@@ -107,19 +107,22 @@ a {
         color: #303030;
         font-size: large;
         font-size: 1.2rem;
+        text-decoration: underline;
     }
 }
 
 /* footer */
-.footer {
+.contact-footer {
     display: inline-block;
     width: 100%;
-    text-align: center;
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: #696969;
     position: absolute;
     bottom: 0;
+    &__copyright {
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: #696969;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -172,7 +175,7 @@ a {
     }
 
     /* main */
-    .about-main {
+    .contact-main {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -201,16 +204,17 @@ a {
         }
     }
 
-    .footer {
+    .contact-footer {
         display: inline-block;
         width: 100%;
-        text-align: center;
-        font-size: 0.8rem;
-        font-weight: 300;
-        color: #696969;
         position: absolute;
         bottom: 0;
-        // margin-top: 40px;
+        &__copyright {
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 300;
+            color: #696969;
+        }
     }
 }
 
