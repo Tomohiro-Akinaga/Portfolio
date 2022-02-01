@@ -171,6 +171,7 @@ ul {
 
     &__subtitle {
         font-weight: 300;
+        // font-size: 2vw;
         margin: 0;
     }
 
@@ -208,6 +209,7 @@ ul {
         transition: 0.2s;
         width: 50%;
         margin-right: 10px;
+        padding: 5px;
         &:hover {
             background-color: $work-background-active-color;
         }
@@ -220,6 +222,7 @@ ul {
         transition: 0.2s;
         width: 50%;
         margin-left: 10px;
+        padding: 5px;
         &:hover {
             background-color: $work-background-active-color;
         }
@@ -227,14 +230,16 @@ ul {
 }
 
 /* footer */
-.footer {
+.work-footer {
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: #696969;
     position: absolute;
+    &__copyright {
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: #696969;
+    }
     // bottom: 0;
     // margin-bottom: 13px;
     // &__copyright {
@@ -306,16 +311,18 @@ ul {
     }
 
     /* footer */
-    .footer {
+    .work-footer {
         display: inline-block;
         width: 100%;
-        text-align: center;
-        font-size: 0.8rem;
-        font-weight: 300;
-        color: #696969;
         position: absolute;
-        // bottom: 0;
         padding: 0;
+        &__copyright {
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 300;
+            color: #696969;
+        }
+        // bottom: 0;
     }
 
 }
@@ -346,7 +353,7 @@ ul {
         &__img--app {
             width: 100px;
             height: auto;
-            margin: 30px 0;
+            margin-left: 15px;
         }
 
         &__article {
@@ -355,18 +362,27 @@ ul {
 
         &__description {
             width: 100%;
-            padding: 0 20px;
+            padding: 20px;
         }
 
         &__text {
-            margin: 20px 0;
-
+            // margin: 20px 0;
+            font-size: 0.9rem;
             &--skills {
                 margin: 0;
                 font-size: 0.8rem;
             }
         }
-
+        &__url {
+            &--text {
+                margin: 0;
+            }
+        }
+        &__github {
+            &--text {
+                margin: 0;
+            }
+        }
     }
 }
 
