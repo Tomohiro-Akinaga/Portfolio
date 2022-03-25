@@ -6,7 +6,6 @@ import Contact from "./pages/Contact/Contact";
 
 export default function App() {
     return (
-        // <Top />
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Top />} />

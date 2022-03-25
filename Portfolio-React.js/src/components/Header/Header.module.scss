@@ -1,0 +1,21 @@
+.button {
+    display: none;
+}
+
+.nav {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .button {
+        display: initial;
+    }
+
+    .nav {
+        display: none;
+        &.isActive {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
