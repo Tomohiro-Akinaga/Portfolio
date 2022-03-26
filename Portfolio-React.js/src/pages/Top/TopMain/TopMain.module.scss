@@ -97,6 +97,7 @@
         padding-left: 30px;
         padding-right: 30px;
         flex-direction: column;
+        justify-content: center;
     }
 
     .leftContainer {
@@ -106,19 +107,34 @@
 
     .rightContainer {
         width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .urlItem {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .externalUrl {
+        font-size: 1.2rem;
     }
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 450px) {
     .myName {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .jobTitle {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
-    .introduction {
-        margin-bottom: 40px;
+    .description {
+        font-weight: 200;
+    }
+    .urlImg {
+        height: 30px;
     }
 }
