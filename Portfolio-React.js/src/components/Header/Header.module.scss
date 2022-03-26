@@ -31,9 +31,16 @@
 .navigationLink {
     font-size: 1.2rem;
     font-weight: 200;
-    padding-left: 20px;
+    padding: 0 20px;
     color: $navigation-link;
     text-decoration: none;
+    transition: all 0.2s;
+    &:hover {
+        color: #fff;
+    }
+    &:active {
+        color: initial;
+    }
 }
 
 @media only screen and (max-width: 890px) {

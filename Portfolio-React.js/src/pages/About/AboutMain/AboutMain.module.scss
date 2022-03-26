@@ -1,4 +1,4 @@
-@import "./variables";
+@import "../../../variables";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .main {
@@ -13,7 +13,14 @@
 
 .heading {
     color: $heading;
+    font-size: 2rem;
     margin-bottom: 30px;
+}
+
+.subHeading {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 200;
 }
 
 .paragraph {

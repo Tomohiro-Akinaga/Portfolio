@@ -30,12 +30,23 @@ function AboutMain() {
                 </p>
             </div>
             <div className={styles.rightContainer}>
+                <h2 className={styles.heading}>Skills</h2>
                 <div usingCurrently>
-                    <h2 className={styles.heading}>Use currently</h2>
+                    <h3 className={styles.subHeading}>
+                        Use currently
+                        <span role="img" aria-label="finger">
+                            👇
+                        </span>
+                    </h3>
                     <UseSkill />
                 </div>
                 <div eagerToLearn>
-                    <h2 className={styles.heading}>Eager to learn</h2>
+                    <h3 className={styles.subHeading}>
+                        Eager to learn
+                        <span role="img" aria-label="finger">
+                            👇
+                        </span>
+                    </h3>
                 </div>
             </div>
         </main>
