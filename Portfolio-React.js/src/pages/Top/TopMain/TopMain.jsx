@@ -12,10 +12,12 @@ function TopMain() {
         <main className={styles.main}>
             <div className={styles.leftContainer}>
                 <img src={facePhoto} className={styles.facePhoto} />
-                <h1 className={styles.myName}>Tomohiro Akinaga</h1>
-                <p className={styles.jobTitle}>
-                    Front-End Developer &amp; YouTuber
-                </p>
+                <div className={styles.introduction}>
+                    <h1 className={styles.myName}>Tomohiro Akinaga</h1>
+                    <p className={styles.jobTitle}>
+                        Front-End Developer &amp; YouTuber
+                    </p>
+                </div>
                 <p className={styles.description}>
                     I am a curious Front-End Developer and Video Creator based
                     in Vancouver.
