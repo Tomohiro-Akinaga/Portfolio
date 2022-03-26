@@ -1,0 +1,137 @@
+@import "../../../variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+.main {
+    padding: 0 60px;
+    min-height: 82vh;
+    display: flex;
+    align-items: center;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.facePhoto {
+    width: 280px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.myName {
+    color: $my-name;
+}
+
+.jobTitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $job-title;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.description {
+    text-align: center;
+    color: $description;
+    font-weight: 300;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.urlItem {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    transition: all 0.2s;
+    margin: 30px 0;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+.urlImg {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.externalUrl {
+    text-decoration: none;
+    color: $external-url;
+    line-height: 40px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 890px) {
+    .facePhoto {
+        width: 250px;
+    }
+
+    .main {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .leftContainer {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .rightContainer {
+        width: 100%;
+    }
+
+    .urlItem {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .externalUrl {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .myName {
+        font-size: 1.6rem;
+    }
+
+    .jobTitle {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-weight: 200;
+    }
+    .urlImg {
+        height: 30px;
+    }
+}

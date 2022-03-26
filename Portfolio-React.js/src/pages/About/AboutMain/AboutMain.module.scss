@@ -1,0 +1,51 @@
+@import "../../../variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.main {
+    width: 100%;
+    display: flex;
+    min-height: 82vh;
+}
+
+.leftContainer {
+    width: 50%;
+    padding: 50px 60px 0 60px;
+}
+
+.usingCurrently {
+    margin-bottom: 30px;
+}
+
+.heading {
+    color: $heading;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.subHeading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.paragraph {
+    color: $paragraph;
+    font-weight: 300;
+}
+
+.rightContainer {
+    width: 50%;
+    padding: 50px 60px 0 60px;
+}
+
+@media only screen and (max-width: 890px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        width: initial;
+        padding: 60px 40px;
+    }
+}

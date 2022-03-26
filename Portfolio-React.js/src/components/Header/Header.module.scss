@@ -1,0 +1,109 @@
+@import "./_variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.header {
+    background-color: $header-background;
+    padding: 0 60px;
+    position: relative;
+}
+
+.logo {
+    display: none;
+}
+
+.accordionButton {
+    display: none;
+}
+
+.navigation {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navigationLink {
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: 0 20px;
+    color: $navigation-link;
+    text-decoration: none;
+    transition: all 0.2s;
+    &:hover {
+        color: #fff;
+    }
+    &:active {
+        color: initial;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &.isActive {
+            height: 400px;
+        }
+    }
+
+    .logo {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        color: #fff;
+        height: 60px;
+    }
+
+    .logoIcon {
+        height: 30px;
+    }
+
+    .accordionButton {
+        height: 60px;
+        width: 60px;
+        display: initial;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: none;
+        background-color: transparent;
+        padding: 18px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .accordionButtonImg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .navigation {
+        display: none;
+        &.isActive {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 85%;
+        }
+    }
+
+    .navigationLink {
+        border-bottom: solid 1px transparent;
+        &:hover {
+            border-bottom: solid 1px #fff;
+        }
+        &:active {
+            color: #fff;
+        }
+    }
+}
