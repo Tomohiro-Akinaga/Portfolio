@@ -40,7 +40,7 @@ function TopMain() {
                     <li key={index} className={styles.urlItem}>
                         <img src={item.img} className={styles.urlImg} />
                         <a href={item.url} className={styles.externalUrl}>
-                            {item.text}
+                            {item.text} &gt;
                         </a>
                     </li>
                 ))}
