@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import accordionButtonImg from "../../assets/images/accordion-button.png";
+import accordionButtonCancelImg from "../../assets/images/accordion-button-cancel.png";
 import styles from "./Header.module.scss";
 
 function Header() {
@@ -32,7 +33,11 @@ function Header() {
                 onClick={() => setAccordion(!accordion)}
             >
                 <img
-                    src={accordionButtonImg}
+                    src={
+                        accordion
+                            ? accordionButtonCancelImg
+                            : accordionButtonImg
+                    }
                     className={styles.accordionButtonImg}
                 />
             </button>
