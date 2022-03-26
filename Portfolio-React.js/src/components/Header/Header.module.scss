@@ -1,4 +1,4 @@
-@import "./_variables";
+@import "../../variables";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
@@ -8,6 +8,7 @@
 }
 
 .header {
+    min-height: 9vh;
     background-color: $header-background;
     padding: 0 60px;
     position: relative;
@@ -22,7 +23,7 @@
 }
 
 .navigation {
-    height: 60px;
+    min-height: 9vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
