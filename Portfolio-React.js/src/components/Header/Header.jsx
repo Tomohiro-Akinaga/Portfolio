@@ -8,6 +8,14 @@ import styles from "./Header.module.scss";
 function Header() {
     const [accordion, setAccordion] = useState(false);
 
+    const link = [
+        { text: "Top", path: "/top" },
+        { text: "About", path: "/about" },
+        { text: "Work", path: "/work" },
+        { text: "Resume", path: "/resume" },
+        { text: "Contact", path: "/contact" },
+    ];
+
     return (
         <header
             className={
@@ -35,18 +43,15 @@ function Header() {
                         : styles.navigation
                 }
             >
-                <Link to="/top" className={styles.navigationLink}>
-                    Top
-                </Link>
-                <Link to="/about" className={styles.navigationLink}>
-                    About
-                </Link>
-                <Link to="/work" className={styles.navigationLink}>
-                    Work
-                </Link>
-                <Link to="/contact" className={styles.navigationLink}>
-                    Contact
-                </Link>
+                {link.map((item, index) => (
+                    <Link
+                        to={item.path}
+                        className={styles.navigationLink}
+                        key={index}
+                    >
+                        {item.text}
+                    </Link>
+                ))}
             </nav>
         </header>
     );

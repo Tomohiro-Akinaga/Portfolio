@@ -1,11 +1,23 @@
 import facePhoto from "../../../assets/images/face.jpg";
+import LinkedInImg from "../../../assets/images/linkedin.png";
+import GitHubImg from "../../../assets/images/github.png";
+import ResumeImg from "../../../assets/images/resume.png";
+import YouTubeImg from "../../../assets/images/youtube.png";
+import BlogImg from "../../../assets/images/medium.png";
+
 import styles from "./TopMain.module.scss";
 
 const LinkedIn_URL = "https://www.linkedin.com/in/tomohiro-akinaga-b7b30a175/";
 const GitHub_URL = "https://github.com/Tomohiro-Akinaga";
-const Resume_URL = "";
 const YouTube_URL = "https://www.youtube.com/channel/UC700Xq2XEMK_a1OHL88lrJg";
 const Blog_URL = "https://medium.com/@tomohiroakinaga";
+
+const linkURL = [
+    { text: "LinkedIn", img: LinkedInImg, url: LinkedIn_URL },
+    { text: "GitHub", img: GitHubImg, url: GitHub_URL },
+    { text: "YouTube", img: YouTubeImg, url: YouTube_URL },
+    { text: "Blog", img: BlogImg, url: Blog_URL },
+];
 
 function TopMain() {
     return (
@@ -24,21 +36,14 @@ function TopMain() {
                 </p>
             </div>
             <ul className={styles.rightContainer}>
-                <a href={LinkedIn_URL} className={styles.externalUrl}>
-                    LinkedIn
-                </a>
-                <a href={GitHub_URL} className={styles.externalUrl}>
-                    GitHub
-                </a>
-                <a href={Resume_URL} className={styles.externalUrl}>
-                    Resume
-                </a>
-                <a href={YouTube_URL} className={styles.externalUrl}>
-                    YouTube
-                </a>
-                <a href={Blog_URL} className={styles.externalUrl}>
-                    Blog
-                </a>
+                {linkURL.map((item, index) => (
+                    <li key={index} className={styles.urlItem}>
+                        <img src={item.img} className={styles.urlImg} />
+                        <a href={item.url} className={styles.externalUrl}>
+                            {item.text}
+                        </a>
+                    </li>
+                ))}
             </ul>
         </main>
     );
