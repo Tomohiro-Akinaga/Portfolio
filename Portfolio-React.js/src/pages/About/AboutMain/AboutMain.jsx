@@ -1,4 +1,5 @@
 import UseSkill from "./UseSkill/UseSkill";
+import EagerSkill from "./EagerSkill/EagerSkill";
 import styles from "./AboutMain.module.scss";
 
 function AboutMain() {
@@ -31,7 +32,7 @@ function AboutMain() {
             </div>
             <div className={styles.rightContainer}>
                 <h2 className={styles.heading}>Skills</h2>
-                <div usingCurrently>
+                <div className={styles.usingCurrently}>
                     <h3 className={styles.subHeading}>
                         Use currently
                         <span role="img" aria-label="finger">
@@ -40,13 +41,14 @@ function AboutMain() {
                     </h3>
                     <UseSkill />
                 </div>
-                <div eagerToLearn>
+                <div className={styles.eagerToLearn}>
                     <h3 className={styles.subHeading}>
                         Eager to learn
                         <span role="img" aria-label="finger">
                             👇
                         </span>
                     </h3>
+                    <EagerSkill />
                 </div>
             </div>
         </main>
