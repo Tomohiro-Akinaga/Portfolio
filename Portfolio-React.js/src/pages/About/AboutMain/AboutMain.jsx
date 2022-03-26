@@ -1,3 +1,4 @@
+import UseSkill from "./UseSkill/UseSkill";
 import styles from "./AboutMain.module.scss";
 
 function AboutMain() {
@@ -31,10 +32,10 @@ function AboutMain() {
             <div className={styles.rightContainer}>
                 <div usingCurrently>
                     <h2 className={styles.heading}>Use currently</h2>
+                    <UseSkill />
                 </div>
                 <div eagerToLearn>
                     <h2 className={styles.heading}>Eager to learn</h2>
-                    <p></p>
                 </div>
             </div>
         </main>
