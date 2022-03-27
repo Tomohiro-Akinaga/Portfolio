@@ -1,6 +1,7 @@
 import ProjectsItem from "./ProjectsItem/ProjectsItem";
 import WeatherForecastAppImg from "../../../assets/images/weather-forecast.png";
 import TaskManagementAppImg from "../../../assets/images/task-management.png";
+import NetFlixCloneAppImg from "../../../assets/images/netflix-clone.png";
 import CountryExplorerImg from "../../../assets/images/country-explorer.png";
 import ReactImg from "../../../assets/images/react.png";
 import FirebaseImg from "../../../assets/images/firebase.png";
@@ -19,7 +20,7 @@ const Projects = [
     },
     {
         name: "Task Management App",
-        img: WeatherForecastAppImg,
+        img: TaskManagementAppImg,
         emoji: "📓",
         description:
             "Every 5 days and 3 hours the weather forecast, and the current weather conditions. Using weather API of Open Weather.",
@@ -29,7 +30,7 @@ const Projects = [
     },
     {
         name: "NetFlix Clone App",
-        img: WeatherForecastAppImg,
+        img: NetFlixCloneAppImg,
         emoji: "🎥",
         description:
             "Every 5 days and 3 hours the weather forecast, and the current weather conditions. Using weather API of Open Weather.",
