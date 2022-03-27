@@ -13,7 +13,6 @@ function Header() {
         { text: "Top", path: "/top" },
         { text: "About", path: "/about" },
         { text: "Projects", path: "/projects" },
-        { text: "Resume", path: "/resume" },
         { text: "Contact", path: "/contact" },
     ];
 
@@ -57,6 +56,12 @@ function Header() {
                         {item.text}
                     </Link>
                 ))}
+                <a
+                    href="https://drive.google.com/file/d/1_biH16IN4mBEkKAQARUrn3HWbmZUa7db/view?usp=sharing"
+                    className={styles.navigationLink}
+                >
+                    Resume
+                </a>
             </nav>
         </header>
     );
