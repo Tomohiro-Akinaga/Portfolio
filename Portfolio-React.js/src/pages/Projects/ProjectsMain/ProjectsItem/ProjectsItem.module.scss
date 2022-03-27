@@ -17,7 +17,7 @@
 
 .appName {
     font-size: 2vw;
-    font-weight: 200;
+    font-weight: 300;
     margin-top: 30px;
     margin-bottom: 5px;
 }
@@ -25,11 +25,13 @@
 .headingContent {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
 }
 
 .toolImg {
     width: 3vw;
-    margin: 0 20px;
+    margin-right: 10px;
 }
 
 .team {

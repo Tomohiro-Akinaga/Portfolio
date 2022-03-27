@@ -1,10 +1,9 @@
 import ProjectsItem from "./ProjectsItem/ProjectsItem";
-import TaskManagementAppImg from "../../../assets/images/task-management.png";
 import WeatherForecastAppImg from "../../../assets/images/weather-forecast.png";
+import TaskManagementAppImg from "../../../assets/images/task-management.png";
+import CountryExplorerImg from "../../../assets/images/country-explorer.png";
 import ReactImg from "../../../assets/images/react.png";
 import FirebaseImg from "../../../assets/images/firebase.png";
-import HTMLImg from "../../../assets/images/html.png";
-import CSSImg from "../../../assets/images/css.png";
 import JavaScriptImg from "../../../assets/images/javascript.png";
 import styles from "./ProjectsMain.module.scss";
 
@@ -12,14 +11,16 @@ const Projects = [
     {
         name: "Weather Forecast App",
         img: WeatherForecastAppImg,
+        emoji: "⛅",
         description:
-            "See The current weather conditions and hourly the weather forecast with autocomplete country search feature. This app uses weather API of Open Weather.",
+            "See The current weather conditions and hourly the weather forecast.There are many information such as High degree, Low degree, Humidity, Pressure, Sunrise Time, Sunset Time. You can search and manage multiple locations, using autocomplete search bar. This app uses weather API of Open Weather.",
         react: ReactImg,
         team: "Personal Project",
     },
     {
         name: "Task Management App",
         img: WeatherForecastAppImg,
+        emoji: "📓",
         description:
             "Every 5 days and 3 hours the weather forecast, and the current weather conditions. Using weather API of Open Weather.",
         react: ReactImg,
@@ -27,46 +28,26 @@ const Projects = [
         team: "Personal Project",
     },
     {
-        name: "Weather Forecast App",
+        name: "NetFlix Clone App",
         img: WeatherForecastAppImg,
+        emoji: "🎥",
         description:
             "Every 5 days and 3 hours the weather forecast, and the current weather conditions. Using weather API of Open Weather.",
         react: ReactImg,
+        firebase: FirebaseImg,
         team: "Personal Project",
     },
     {
-        name: "Weather Forecast App",
-        img: WeatherForecastAppImg,
+        name: "Country Explorer App",
+        img: CountryExplorerImg,
+        emoji: "🇨🇦",
         description:
             "Every 5 days and 3 hours the weather forecast, and the current weather conditions. Using weather API of Open Weather.",
-        react: ReactImg,
+        javascript: JavaScriptImg,
         team: "Group Project",
+        app: "https://country-explorer-83c77.web.app/",
+        github: "https://github.com/Tomohiro-Akinaga/country-explorer",
     },
-    // {
-    //     name: "Task Manegement App",
-    //     img: TaskManagementAppImg,
-    //     description:
-    //         "Every 5 days and 3 hours the weather forecast, and the current weather conditions. Using weather API of Open Weather.",
-    //     react: ReactImg,
-    //     firebase: FirebaseImg,
-    // },
-    // {
-    //     name: "NetFlix Clone App",
-    //     img: WeatherForecastAppImg,
-    //     description:
-    //         "Every 5 days and 3 hours the weather forecast, and the current weather conditions. Using weather API of Open Weather.",
-    //     react: ReactImg,
-    //     firebase: FirebaseImg,
-    // },
-    // {
-    //     name: "Search Country App",
-    //     img: TaskManagementAppImg,
-    //     description:
-    //         "Every 5 days and 3 hours the weather forecast, and the current weather conditions. Using weather API of Open Weather.",
-    //     html: HTMLImg,
-    //     css: CSSImg,
-    //     javascript: JavaScriptImg,
-    // },
 ];
 
 function ProjectsMain() {
