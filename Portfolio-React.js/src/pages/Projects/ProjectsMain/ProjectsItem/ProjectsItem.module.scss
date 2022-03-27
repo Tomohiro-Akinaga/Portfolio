@@ -56,6 +56,7 @@
 .linkBox {
     margin-bottom: 30px;
 }
+
 .url {
     margin: 0 20px;
     font-size: 1.2vw;
@@ -73,7 +74,19 @@
     }
 
     .appName {
-        font-size: 3.5vw;
+        font-size: 4vw;
+    }
+    .toolImg {
+        width: 7vw;
+    }
+    .team {
+        font-size: 2vw;
+    }
+    .description {
+        font-size: 2.5vw;
+    }
+    .url {
+        font-size: 2.5vw;
     }
 }
 
