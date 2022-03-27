@@ -119,9 +119,9 @@
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 520px) {
     .myName {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 
     .jobTitle {
@@ -131,6 +131,7 @@
     .description {
         font-weight: 200;
     }
+
     .urlImg {
         height: 30px;
     }

@@ -1,0 +1,121 @@
+@import "../../../../variables";
+
+.wrapper {
+    width: 45%;
+    margin: 30px 0;
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.071);
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appName {
+    font-size: 2vw;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.headingContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+.toolImg {
+    width: 3vw;
+    margin-right: 10px;
+}
+
+.team {
+    font-weight: 300;
+    font-size: 1vw;
+    background-color: $team;
+    border-radius: 50px;
+    padding: 2px 15px;
+}
+
+.itemImg {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.description {
+    margin: 30px;
+    font-size: 1.2vw;
+    font-weight: 200;
+    color: $description;
+}
+
+.linkBox {
+    margin-bottom: 30px;
+}
+
+.url {
+    margin: 0 20px;
+    font-size: 1.2vw;
+    font-weight: 300;
+    text-decoration: none;
+    color: $external-url;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .appName {
+        font-size: 4vw;
+    }
+    .toolImg {
+        width: 7vw;
+    }
+    .team {
+        font-size: 2vw;
+    }
+    .description {
+        font-size: 2.5vw;
+    }
+    .url {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .appName {
+        font-size: 4.5vw;
+        font-weight: 300;
+    }
+    .toolImg {
+        width: 8vw;
+    }
+    .team {
+        font-size: 2.5vw;
+        font-weight: 400;
+    }
+
+    .description {
+        font-size: 3vw;
+        font-weight: 300;
+    }
+
+    .url {
+        font-size: 3vw;
+        font-weight: 400;
+    }
+}

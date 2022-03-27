@@ -43,7 +43,7 @@ function AboutMain() {
                 </div>
                 <div className={styles.eagerToLearn}>
                     <h3 className={styles.subHeading}>
-                        Eager to learn
+                        Aspiring to learn
                         <span role="img" aria-label="finger">
                             👇
                         </span>

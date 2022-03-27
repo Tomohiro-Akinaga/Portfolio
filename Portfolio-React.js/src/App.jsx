@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Top from "./pages/Top/Top";
 import About from "./pages/About/About";
-import Work from "./pages/Work/Work";
+import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
                 <Route path="/" element={<Top />} />
                 <Route path="top" element={<Top />} />
                 <Route path="about" element={<About />} />
-                <Route path="work" element={<Work />} />
+                <Route path="projects" element={<Projects />} />
                 <Route path="contact" element={<Contact />} />
             </Routes>
         </BrowserRouter>
