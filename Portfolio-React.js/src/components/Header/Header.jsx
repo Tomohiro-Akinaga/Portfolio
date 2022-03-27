@@ -12,7 +12,7 @@ function Header() {
     const link = [
         { text: "Top", path: "/top" },
         { text: "About", path: "/about" },
-        { text: "Work", path: "/work" },
+        { text: "Projects", path: "/projects" },
         { text: "Resume", path: "/resume" },
         { text: "Contact", path: "/contact" },
     ];

@@ -1,15 +1,15 @@
 import Header from "../../components/Header/Header";
-import WorkMain from "./WorkMain/WorkMain";
+import ProjectsMain from "./ProjectsMain/ProjectsMain";
 import Footer from "../../components/Footer/Footer";
 
-function Work() {
+function Projects() {
     return (
         <>
             <Header />
-            <WorkMain />
+            <ProjectsMain />
             <Footer />
         </>
     );
 }
 
-export default Work;
+export default Projects;
