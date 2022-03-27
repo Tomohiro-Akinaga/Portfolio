@@ -57,7 +57,7 @@ function Header() {
                     </Link>
                 ))}
                 <a
-                    href="https://drive.google.com/file/d/1_biH16IN4mBEkKAQARUrn3HWbmZUa7db/view?usp=sharing"
+                    href="https://drive.google.com/file/d/10TFpYiBSi9lC3EPtpo4wqOSATxzuKBRo/view?usp=sharing"
                     className={styles.navigationLink}
                 >
                     Resume
