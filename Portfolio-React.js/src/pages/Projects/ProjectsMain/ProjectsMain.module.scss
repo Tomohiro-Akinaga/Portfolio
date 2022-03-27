@@ -8,18 +8,12 @@
 .title {
     color: $title;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .itemBox {
     width: 100%;
     display: flex;
-    flex-direction: column;
-}
-
-@media only screen and (max-width: 520px) {
-    .main {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

@@ -13,7 +13,7 @@ const Projects = [
         name: "Weather Forecast App",
         img: WeatherForecastAppImg,
         description:
-            "Every 5 days and 3 hours the weather forecast, and the current weather conditions. Using weather API of Open Weather.",
+            "See The current weather conditions and hourly the weather forecast with autocomplete country search feature. This app uses weather API of Open Weather.",
         react: ReactImg,
         team: "Personal",
     },

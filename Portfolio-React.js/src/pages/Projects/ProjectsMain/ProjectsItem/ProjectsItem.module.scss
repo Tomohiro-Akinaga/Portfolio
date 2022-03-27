@@ -1,69 +1,64 @@
 @import "../../../../variables";
 
 .wrapper {
-    width: 100%;
+    width: 45%;
     margin: 30px 0;
     list-style: none;
-    height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.071);
-}
-
-.item {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
 }
 
 .textContent {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding-left: 40px;
+}
+
+.appName {
+    font-size: 2vw;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 .headingContent {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .toolImg {
-    width: 40px;
+    width: 3vw;
     margin: 0 20px;
 }
 
 .team {
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 1vw;
     background-color: $team;
     border-radius: 50px;
     padding: 2px 15px;
 }
 
-.heading {
-    color: $heading;
-    font-size: 1.8rem;
-    font-weight: 200;
-}
-
 .itemImg {
-    width: 40%;
-    border-radius: 6px;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .description {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-weight: 300;
+    margin: 30px;
+    font-size: 1.2vw;
+    font-weight: 200;
     color: $description;
 }
 
+.linkBox {
+    margin-bottom: 30px;
+}
 .url {
-    margin: 10px 20px;
-    font-size: 1.2rem;
+    margin: 0 20px;
+    font-size: 1.2vw;
     font-weight: 300;
     text-decoration: none;
     color: $external-url;
@@ -72,37 +67,34 @@
     }
 }
 
-@media only screen and (max-width: 1020px) {
-    .item {
-        flex-direction: column;
-    }
-    .itemImg {
+@media only screen and (max-width: 890px) {
+    .wrapper {
         width: 100%;
     }
-    .textContent {
-        padding: 0;
-        margin-top: 40px;
+
+    .appName {
+        font-size: 3.5vw;
     }
 }
 
-@media only screen and (max-width: 520px) {
-    .item {
-        padding: 20px;
-    }
-    .heading {
-        font-size: 1.2rem;
-    }
-    .toolImg {
-        width: 30px;
-    }
-    .team {
-        font-weight: 200;
-        font-size: 0.8rem;
-    }
-    .description {
-        font-size: 0.9rem;
-    }
-    .url {
-        font-size: 1rem;
-    }
-}
+// @media only screen and (max-width: 520px) {
+//     .item {
+//         padding: 20px;
+//     }
+//     .heading {
+//         font-size: 1.2rem;
+//     }
+//     .toolImg {
+//         width: 30px;
+//     }
+//     .team {
+//         font-weight: 200;
+//         font-size: 0.8rem;
+//     }
+//     .description {
+//         font-size: 0.9rem;
+//     }
+//     .url {
+//         font-size: 1rem;
+//     }
+// }
