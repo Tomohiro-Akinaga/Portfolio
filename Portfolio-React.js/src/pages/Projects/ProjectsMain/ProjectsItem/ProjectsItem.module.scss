@@ -90,24 +90,30 @@
     }
 }
 
-// @media only screen and (max-width: 520px) {
-//     .item {
-//         padding: 20px;
-//     }
-//     .heading {
-//         font-size: 1.2rem;
-//     }
-//     .toolImg {
-//         width: 30px;
-//     }
-//     .team {
-//         font-weight: 200;
-//         font-size: 0.8rem;
-//     }
-//     .description {
-//         font-size: 0.9rem;
-//     }
-//     .url {
-//         font-size: 1rem;
-//     }
-// }
+@media only screen and (max-width: 520px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .appName {
+        font-size: 4.5vw;
+        font-weight: 300;
+    }
+    .toolImg {
+        width: 8vw;
+    }
+    .team {
+        font-size: 2.5vw;
+        font-weight: 400;
+    }
+
+    .description {
+        font-size: 3vw;
+        font-weight: 300;
+    }
+
+    .url {
+        font-size: 3vw;
+        font-weight: 400;
+    }
+}
