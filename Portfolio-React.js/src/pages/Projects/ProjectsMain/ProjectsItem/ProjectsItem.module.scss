@@ -42,17 +42,54 @@
     padding: 2px 15px;
 }
 
-.itemImg {
-    width: 100%;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+.imgContent {
+    display: table;
+    position: relative;
+    height: auto;
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        content: "";
+        background: $item-hover-background;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        transform-origin: left bottom;
+        transform: scale(1, 0);
+        transition: transform 0.3s;
+    }
+    &:hover {
+        &::after {
+            transform-origin: left top;
+            transform: scale(1, 1);
+        }
+    }
 }
 
 .description {
-    margin: 30px;
-    font-size: 1.2vw;
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 40px;
     font-weight: 200;
-    color: $description;
+    font-size: 1.5vw;
+}
+
+.itemImg {
+    max-width: 100%;
+    vertical-align: bottom;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .linkBox {
@@ -110,7 +147,7 @@
     }
 
     .description {
-        font-size: 3vw;
+        font-size: 2.5vw;
         font-weight: 300;
     }
 
