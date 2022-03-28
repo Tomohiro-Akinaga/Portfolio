@@ -16,18 +16,18 @@ function AboutMain() {
                 <br />
                 <p className={styles.paragraph}>
                     In order to become a front-end developer, I am currently
-                    studying programming with a focus on JavaScript at a college
-                    in Vancouver. In addition to coding, I also love photo
-                    processing, video editing, and digital marketing. I am
-                    familiar with all areas of the web and can handle a wide
-                    range of tasks from design, development, and analysis.
+                    learning web development at a college in Vancouver. In
+                    addition to coding, I also love photo processing, video
+                    editing, and digital marketing. I am familiar with all areas
+                    of the web and can handle a wide range of tasks from design,
+                    development, and analysis.
                 </p>
                 <br />
                 <p className={styles.paragraph}>
                     I am a very passionate and curious person who pursues
                     everything to the fullest. There are still many things that
                     I have yet to learn, but I am eager to learn and improve my
-                    skills.
+                    multiple skills.
                 </p>
             </div>
             <div className={styles.rightContainer}>
