@@ -36,10 +36,14 @@ function ProjectsItem({ item }) {
                     <p className={styles.team}>{item.team}</p>
                 </div>
                 <div className={styles.linkBox}>
-                    <a href={item.app} className={styles.url}>
+                    <a href={item.app} className={styles.url} target="_blank">
                         URL &gt;
                     </a>
-                    <a href={item.github} className={styles.url}>
+                    <a
+                        href={item.github}
+                        className={styles.url}
+                        target="_blank"
+                    >
                         GitHub &gt;
                     </a>
                 </div>

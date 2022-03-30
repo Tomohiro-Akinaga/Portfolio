@@ -39,7 +39,11 @@ function TopMain() {
                 {linkURL.map((item, index) => (
                     <li key={index} className={styles.urlItem}>
                         <img src={item.img} className={styles.urlImg} />
-                        <a href={item.url} className={styles.externalUrl}>
+                        <a
+                            href={item.url}
+                            className={styles.externalUrl}
+                            target="_blank"
+                        >
                             {item.text} &gt;
                         </a>
                     </li>
