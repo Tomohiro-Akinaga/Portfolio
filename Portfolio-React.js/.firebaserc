@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "portfolio-react-4cd47"
+  },
+  "targets": {
+    "portfolio-react-4cd47": {
+      "hosting": {
+        "tomohiro-akinaga": [
+          "tomohiroakinaga"
+        ]
+      }
+    }
   }
 }

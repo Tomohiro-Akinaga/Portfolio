@@ -1,15 +1,11 @@
 import styles from "./EagerSkill.module.scss";
 import JestImg from "../../../../assets/images/jest.png";
 import ReactTestingLibraryImg from "../../../../assets/images/react-testing-library.png";
-import MaterialUIImg from "../../../../assets/images/materialui.png";
 import webpackImg from "../../../../assets/images/webpack.png";
-import TypeScriptImg from "../../../../assets/images/typescript.png";
 import AdobeXDImg from "../../../../assets/images/adobe-xd.png";
 
 const skills = [
-    { text: "Material-UI", img: MaterialUIImg },
     { text: "webpack", img: webpackImg },
-    { text: "TypeScript", img: TypeScriptImg },
     { text: "Jest", img: JestImg },
     {
         text: "React" + " " + "Testing" + " " + "Library",
