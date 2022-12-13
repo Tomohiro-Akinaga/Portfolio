@@ -13,8 +13,12 @@ import GoogleAnalyticsImg from "../../../../assets/images/google-analytics.png";
 import Jest from "../../../../assets/images/jest.png";
 import ReactTestingLibrary from "../../../../assets/images/react-testing-library.png";
 import webpack from "../../../../assets/images/webpack.png";
-import TypeScript from "../../../../assets/images/typescript.png";
+import TypeScriptImg from "../../../../assets/images/typescript.png";
 import AdobeXD from "../../../../assets/images/adobe-xd.png";
+import MaterialUIImg from "../../../../assets/images/materialui.png";
+import NodeJSImg from "../../../../assets/images/nodejs.png";
+import ExpressImg from "../../../../assets/images/expressjs.png";
+import MongoDBImg from "../../../../assets/images/mongodb.png";
 
 const skills = [
     { text: "HTML", img: HTMLImg },
@@ -22,6 +26,11 @@ const skills = [
     { text: "Sass", img: SassImg },
     { text: "JavaScript", img: JavaScriptImg },
     { text: "React", img: ReactImg },
+    { text: "TypeScript", img: TypeScriptImg },
+    { text: "Material-UI", img: MaterialUIImg },
+    { text: "Node.js", img: NodeJSImg },
+    { text: "Express.js", img: ExpressImg },
+    { text: "MongoDB", img: MongoDBImg },
     { text: "Firebase", img: FirebaseImg },
     { text: "npm", img: npmImg },
     { text: "GitHub", img: GitHubImg },

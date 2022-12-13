@@ -31,8 +31,8 @@ function TopMain() {
                     </p>
                 </div>
                 <p className={styles.description}>
-                    I am a curious Front-End Developer and Video Creator based
-                    in Vancouver.
+                    I am a professional Front-End Developer and Video Creator
+                    based in Vancouver
                 </p>
             </div>
             <ul className={styles.rightContainer}>

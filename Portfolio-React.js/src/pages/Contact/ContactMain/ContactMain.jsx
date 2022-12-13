@@ -7,10 +7,11 @@ function ContactMain() {
                 Thank you for visiting my portfolio !
             </h1>
             <p className={styles.text}>
-                If you require any further information, feel free to contact me :)
+                If you require any further information, feel free to contact me
+                :)
             </p>
-            <a href="mailto:tomohiroakinaga@gmail.com" className={styles.email}>
-                tomohiroakinaga@gmail.com
+            <a href="mailto:akitomo129@gmail.com" className={styles.email}>
+                akitomo129@gmail.com
             </a>
         </main>
     );
